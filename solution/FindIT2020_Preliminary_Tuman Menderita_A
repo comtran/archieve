@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int N, Q;
+int defeat[1010];
+int group[1010];
+
+int findRoot(int a) {
+	if (defeat[a] == 1) return a;
+	if (defeat[defeat[a]] == 1) return defeat[a];
+	return findRoot(defeat[a]);
+}
+
+int main (){
+	cin >> N >> Q;
+	for (int i=1; i <= N; i++){
+		cin >> defeat[i];
+	}
+	for (int i=2; i <= N; i++){
+		group[i] = findRoot(i);
+	}
+	while (Q--) {
+		int A, B;
+		cin >> A >> B;
+		cout << ((group[A]==group[B] && group[A] != 1)? "Ya" : "Tidak") << endl;
+	}
+}

@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+
+ll sqr(ll a){
+	return a*a;
+}
+
+ll fast_expo(ll a, ll n, ll mod){
+	if (n==0) return 1;
+	if (n==1) return a % mod;
+	if (n%2==0) return sqr(fast_expo(a,n/2,mod)) % mod;
+	if (n%2==1) return (a*(sqr(fast_expo(a,(n-1)/2,mod))%mod)) % mod;
+}
+
+ll MODS[] = {100, 40, 16, 8, 4, 2, 1};
+
+ll solve(ll a, ll b, ll mods){
+	if (MODS[mods]==1) {
+		return 0;		
+	}
+	if (b == 0) return 1;
+	ll power = solve(a,b-1,mods+1);
+	//cout << a << " " << power << " " << MODS[mods] << endl;
+	return fast_expo(a,power,MODS[mods]);
+}
+
+ll A, B;
+
+int main () {
+	int t; cin >> t;
+	while (t--) {
+		cin >> A >> B;
+		ll ans = solve(A, B, 0);
+		if (ans < 10) cout <<"0";
+		cout << ans << endl;
+	}
+}

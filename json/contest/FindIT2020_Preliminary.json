@@ -1,0 +1,40 @@
+{
+    "nama": "FindIT 2020 - Preliminary",
+    "tanggal": "15 Maret 2020",
+    "team": [
+        {
+            "nama": "Tuman Menderita",
+            "rank": "N/A",
+            "solve": "3",
+            "penalty": "N/A",
+            "anggota": [
+                "Anas Rasyid",
+                "Muhammad Abdurrohman Al Fatih",
+                "Nuril Kaunaini Rofiatunnajah"
+            ]
+        },
+        {
+            "nama": "Tsubasah",
+            "rank": "N/A",
+            "solve": "0",
+            "penalty": "0",
+            "anggota": [
+                "Mizan Saputro Nugroho",
+                "Muhammad Avtara Khrisna",
+                "Muhammad Ilham Mubarak"
+            ]
+        },
+        {
+            "nama": "Sesuatu di Jogja",
+            "rank": "N/A",
+            "solve": "1",
+            "penalty": "N/A",
+            "anggota": [
+                "Deni Saputra Nugroho",
+                "I Gusti Agung Istri Savitri Maharani",
+                "Nabil Anwar Fauzi"
+            ]
+        }
+    ],
+    "problem": ["A", "B", "C", "D", "E", "F"]
+}
