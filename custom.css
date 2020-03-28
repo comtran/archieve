@@ -16,19 +16,8 @@ html {
     font-weight: bold;
 }
 
-.nav-link {
-    cursor: pointer;
-}
-
-.nav-link:hover {
-    background-color: lightgray;
-}
-
-.nav-item {
-    cursor: pointer;
-}
-
 .nav-item:hover {
+    cursor: pointer;
     background-color: lightgray;
 }
 /* .contest-stage { */
