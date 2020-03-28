@@ -16,6 +16,13 @@ html {
     font-weight: bold;
 }
 
+.nav-link {
+    cursor: pointer;
+}
+
+.nav-item {
+    cursor: pointer;
+}
 /* .contest-stage { */
     /* font-size: 15pt; */
 /* } */
