@@ -1,7 +1,7 @@
 
 # Membuat Data Stage
-Untuk membuat data sebuah stage, buat file json dengan format nama file `{slug}_{stage}.json`
-contoh : `FindIT2020_Preliminary.json`
+Untuk membuat data sebuah stage, buat file json dengan format nama file `{stage}.json` letakkan dalam folder yang emmiliki format nama `{slug}`
+contoh : `FindIT2020\Preliminary.json`
 
 File json tersebut harus memiliki format sebagai berikut
 ```json
@@ -36,8 +36,8 @@ File json tersebut harus memiliki format sebagai berikut
 
 
 # Membuat Data Problem dan Solusi
-Untuk membuat data sebuah problem dan solusinya, buat file json dengan format nama file `{slug}_{stage}_{problem}.json`
-contoh : `FindIT2020_Preliminary_A.json`
+Untuk membuat data sebuah problem dan solusinya, file tersebut memiliki format `{slug}/{stage}/{problem}.json`
+contoh : `FindIT2020/Preliminary/A.json`
 
 File json tersebut harus memiliki format sebagai berikut
 ```json
@@ -48,7 +48,7 @@ File json tersebut harus memiliki format sebagai berikut
 }
 ```
 - `tag` adalah array of string yang berisi kategori materi problem tersebut.
-- File PDF problem disimpan dalam folder `problem` yang ada di root.
+- File PDF problem disimpan dalam folder `problem\{slug}\{stage}` yang ada di root.
 - `solution` adalah array of string yang berisi nama nama tim yang berhasil menyelesaikan problem ini.
 - `solution` akan tampil pada dropdown solusi.
 - File solusi disimpan dalam folder `solution` yang ada di root dan memiliki format `{slug}_{stage}_{nama_tim}_{problem}`.

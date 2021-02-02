@@ -1,5 +1,30 @@
 [
     {
+        "nama": "ICPCAJ 2020",
+        "slug": "ICPCAJ2020",
+        "stage": ["Final"]
+    },
+    {
+        "nama": "INC 2020",
+        "slug": "INC2020",
+        "stage": ["Preliminary"]
+    },
+    {
+        "nama": "Hology 3.0",
+        "slug": "Hology3",
+        "stage": ["Preliminary", "Final"]
+    },
+    {
+        "nama": "GemasTIK XIII",
+        "slug": "GemasTIKXIII",
+        "stage": ["Preliminary"]
+    },
+    {
+        "nama": "GemasTIK XII",
+        "slug": "GemasTIKXII",
+        "stage": ["Preliminary", "Final"]
+    },
+    {
         "nama": "FindIT 2020",
         "slug": "FindIT2020",
         "stage": ["Preliminary"]

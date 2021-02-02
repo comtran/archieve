@@ -7,7 +7,7 @@ $(function() {
     
     function get_detail_contest() {
         $.ajax({
-            url: "json/contest/" + slug + "_" + stage + ".json",
+            url: `json/contest/${slug}/${stage}.json`,
             async: false,
             success: function (d) {
                 $(".content-sub").html(`
@@ -62,7 +62,7 @@ $(function() {
     
     function get_problem() {
         $.ajax({
-            url: "json/contest/" + slug + "_" + stage + "_" + problem + ".json",
+            url: `json/contest/${slug}/${stage}/${problem}.json`,
             async: false,
             success: function (d) {
                 var solutions = "";
@@ -90,8 +90,8 @@ $(function() {
                 </center>
                 <div class="content-sub-sub">
                     <div class="embed-responsive embed-responsive-1by1" style="overflow: visible">
-                        <object class="embed-responsive-item" data="problem/${slug}_${stage}_${problem}.pdf" type="application/pdf"> 
-                            <p>It appears you don't have a PDF plugin for this browser.No biggie... you can <a href="problem/${slug}_${stage}_${problem}.pdf">click here todownload the PDF file.</a></p>
+                        <object class="embed-responsive-item" data="problem/${slug}/${stage}/${problem}.pdf" type="application/pdf"> 
+                            <p>It appears you don't have a PDF plugin for this browser.No biggie... you can <a href="problem/${slug}/${stage}/${problem}.pdf">click here todownload the PDF file.</a></p>
                         </object>
                     </div>
                 </div>
@@ -171,7 +171,7 @@ $(function() {
         stage = $(this).html();
         
         $.ajax({
-            url: "json/contest/" + slug + "_" + stage + ".json",
+            url: `json/contest/${slug}/${stage}.json`,
             async: false,
             success: function (d) {
                 $(".content > ul").html(`
